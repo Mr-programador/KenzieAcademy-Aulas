@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Formulário</title>
+</head>
+<body>
+    <form>
+        <label for="email">Email</label></br>
+        <input type="email" id="email" name="email" placeholder="Digite seu email..." required></br></br>
+
+        <label for="senha">Senha</label></br>
+        <input type="password" id="senha" name="senha" placeholder="Digite sua senha..." required></br></br>
+
+        <label for="descricao">Descreva porque quer participar do evento.</label></br>
+        <textarea id="descricao" name="descricao" placeholder="Faça uma breve descrição"></textarea></br></br>
+
+        <label for="modulo1">Selecione seu módulo</label></br>
+        <select>
+            <option value="modulo1">Módulo 1</option>
+            <option value="modulo2">Módulo 2</option>
+        </select></br></br>
+
+        <label for="cadastro-senha">Cadastre uma senha</label></br>
+        <input type="password" id="cadastro-senha" name="cadastro-senha" placeholder="Digite sua senha aqui..." required></br></br>
+
+        <label for="repita-senha">Repita a senha</label></br>
+        <input type="password" id="repita-senha" name="cadastro-senha" placeholder="Digite sua senha aqui..." required></br></br>
+
+        <label for="info">Deseja receber informações sobre o evento no seu e-mail?</label></br></br>
+        <input type="radio" id="info" name="info">
+        <span>Sim, quero receber informações do evento e ficar por dentro de todas as atualizações</span></br>
+
+        <input type="radio" id="info" name="info">
+        <span>Não, quero ser pego de surpresa.</span></br></br>
+
+        <button type="submit" name="info">
+            Cadastrar
+        </button>
+
+    </form>
+    
+</body>
+</html>
