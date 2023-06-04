@@ -1,29 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Open+Sans:wght@400;700&family=Roboto+Condensed:ital,wght@0,700;1,700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
 }
 
 body{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: justify;
+    font-family: 'Open-sans', sans-serif;
+    background-color: #fff;
 }
 
-section{
-    max-width: 1000px;
-    margin: auto;
-}
-
-article{
-    margin: 50px;
-    background-color: #f7f7f7;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-    padding: 20px;
-}
-h2{
-    color: #000099;
-}
-
-p, a{
+.titulo{
+    color: aliceblue;
+    background-color: rgb(10, 10, 110);
+    font-size: 24px;
     padding: 10px;
+    margin: auto;
+    text-shadow: 2px 2px 10px black;
 }
+
+.link a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+}
+
+.link a:hover{
+    color: blueviolet;
+}
+
+.link a:active{
+    color: rgb(226, 192, 43);
+}
+
+.principal{
+    margin:auto;
+    text-align: center;
+    color: rgb(10, 10, 110);
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.projetos{
+    background-color: rgb(255, 255, 255);
+    color: rgb(10, 10, 110);
+    font-size: 1.3rem;
+    margin: auto;
+    text-align: left;
+    width: 800px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.projetos h1, h2, h3, h4, h5, h6{
+    padding-top: 20px;
+}
+
+.projetos a, li {
+    color: black;
+    text-decoration: none;
+    list-style: none;
+}
+
+.bloco{
+    margin: 0px 50px;
+}
+
+.bloco a:hover{
+    color: blueviolet;
+}
+
+.bloco a:active{
+    color: rgb(226, 192, 43);
+}
+
+.rodape{
+    margin: auto;
+    text-align: center;
+    color: rgb(10, 10, 110);
+    font-size: 1.0rem;
+    position:relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 20px; /* Altura do rodapé */
+    background-color: rgba(10, 10, 110, 0.4);
+    padding: 10px;
+  }
