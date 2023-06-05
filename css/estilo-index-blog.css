@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Open+Sans:wght@400;700&family=Roboto+Condensed:ital,wght@0,700;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #fff;
+    font-family: 'Open-sans', sans-serif;
+    font-size: 1.0rem; 
+}
+
+p{
+    text-indent: 5%;
+    margin: 10px;
+    text-align: justify;
+}
+
+a{
+    padding: 10px 0px;
+    text-decoration: none;
+}
+
+.header{
+    margin: 20px 0px 0px 20px;
+}
+
+.logo{
+    text-align: left;
+}
+
+.container{
+    margin: auto;
+    max-width: 600px;
+    min-width: 100px; 
+}
+
+.container h1, h2, h3, h4{
+    color: #3011b9;
+    text-align: left;
+}
+
+.artigo{
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    background-color: #f7f7f7; 
+    margin: 50px 0px;
+    padding: 20px;
+    text-align: left;
+}
+
+.lendo{
+    display: block;
+    padding-bottom: 20px ;
+    padding: 10px 0px;  
+}
+
+.formulario{
+    background-color: rgba(10, 10, 110, 0.4);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    margin: auto;
+    max-width: 600px; 
+    min-width: 100px;
+    text-align: center;
+    padding: 10px;
+}
+
+.formulario h3{
+    color: #fff;
+}
+
+
+.footer{
+    margin: 10px;
+    text-align: center;
+}
+
+.footer{
+    margin: 10px;
+    text-align: center;
+}
+
+/* Estilos para smartphones */
+@media (max-width: 767px) {
+    .projetos {
+      max-width: 100%;
+      padding: 10px;
+    }
+    
+    .bloco {
+      margin: 0;
+    }
+    
+    .titulo {
+      font-size: 20px;
+      padding: 8px;
+    }
+    
+    .link a {
+      font-size: 16px;
+    }
+    
+    .principal {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+    
+    .rodape {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+  
+  /* Estilos para telas menores de 480px */
+  @media (max-width: 480px) {
+    .titulo {
+      font-size: 16px;
+      padding: 6px;
+    }
+  }    
