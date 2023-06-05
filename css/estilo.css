@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Open+Sans:wght@400;700&family=Roboto+Condensed:ital,wght@0,700;1,700&display=swap');
 
+:root{
+  --principal:rgb(25, 42, 81);
+  --secundaria:rgb(124, 146, 153);
+  --destaque:rgb(255, 207, 86);
+  --contraste:rgb(252, 247, 255);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,12 +15,12 @@
   
   body {
     font-family: 'Open-sans', sans-serif;
-    background-color: #fff;
+    background-color: var(--contraste);
   }
   
   .titulo {
-    color: aliceblue;
-    background-color: rgb(10, 10, 110);
+    color: var(--contraste);
+    background-color: var(--principal);
     font-size: 24px;
     padding: 10px;
     margin: auto;
@@ -23,29 +30,29 @@
   .link a {
     text-decoration: none;
     font-size: 18px;
-    color: #fff;
+    color: var(--contraste);
     display: block;
   }
   
   .link a:hover {
-    color: blueviolet;
+    color: var(--secundaria);
   }
   
   .link a:active {
-    color: rgb(226, 192, 43);
+    color: var(--destaque);
   }
   
   .principal {
     margin: auto;
     text-align: center;
-    color: rgb(10, 10, 110);
+    color: var(--principal);
     font-size: 1.4rem;
     margin-bottom: 20px;
   }
   
   .projetos {
-    background-color: rgb(255, 255, 255);
-    color: rgb(10, 10, 110);
+    background-color: var(--contraste);
+    color: var(--secundaria);
     font-size: 1.3rem;
     margin: auto;
     text-align: left;
@@ -76,25 +83,39 @@
   }
   
   .bloco a:hover {
-    color: blueviolet;
+    color: var(--secundaria);
+    transition: 0.4s;
   }
   
   .bloco a:active {
-    color: rgb(226, 192, 43);
+    color: var(--destaque);
   }
   
   .rodape {
     margin: auto;
     text-align: center;
-    color: rgb(10, 10, 110);
+    color: var(--contraste);
     font-size: 1.0rem;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 20px; /* Altura do rodapé */
-    background-color: rgba(10, 10, 110, 0.4);
+    height: 40px; /* Altura do rodapé */
+    background-color: var(--secundaria);
     padding: 10px;
+  }
+
+  /* Estilos para Tablets */
+  @media screen and (max-width: 991px) {
+    .projetos {
+      width: 80%;
+      max-width: 600px;
+      padding: 15px;
+    }
+  
+    .bloco {
+      margin: 0;
+    }
   }
   
   /* Estilos para smartphones */

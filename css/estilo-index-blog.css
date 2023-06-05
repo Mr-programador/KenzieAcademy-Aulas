@@ -85,7 +85,7 @@ a{
 /* Responsividade para telas menores */
 @media screen and (max-width: 991px) {
     .projetos {
-      width: 90%;
+      width: 80%;
       max-width: 600px;
       padding: 15px;
     }
