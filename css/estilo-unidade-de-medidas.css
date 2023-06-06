@@ -1,0 +1,40 @@
+.menu{
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+    background-color: #fff;
+    list-style-type: none;
+}
+
+.menu li {
+    display: inline-block;
+    border: 2px solid #000;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+.menu li :hover{
+    text-decoration: none;
+    color: #fff;
+    background-color: blue;
+}
+
+.container{
+    text-align: center;
+    margin: 20px;
+}
+
+.footer{
+    margin: 10px;
+    text-align: center;
+}
+
+.footer{
+    margin: 10px;
+    text-align: center;
+}
