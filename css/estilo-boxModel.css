@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Open+Sans:wght@400;700&family=Roboto+Condensed:ital,wght@0,700;1,700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #fff;
+    font-family: 'Open-sans', sans-serif;
+    font-size: 1.0rem;
+    color: #000;
+    padding: 0px 10px;
+}
+
+p{
+    font-size: 16px;
+    text-align: left;
+}
+
+h2{
+    margin-bottom: 20px;
+}
+
+.header{
+    margin: auto;
+}
+
+.header h1{
+    margin: auto;
+    text-align: center;
+    font-weight: 700;
+    padding: 18px;
+}
+
+.header h2{
+    font-weight: 700;
+}
+
+.header p{
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.color-destaque{
+    color: #1e5ac8;
+}
+
+.main{
+    background-color: #1e5ac8;
+    color: #fff;
+    padding: 5px;
+    margin-bottom: 20px;
+
+}
+
+.main h2{
+    margin-bottom: 20px;
+}
+
+.main p{
+    margin: 20px 0;
+}
+
+.section{
+    margin-bottom: 20px;
+}
+
+.section h2{
+    margin-bottom: 20px;
+}
+
+.section li{
+    line-height: 1.5;
+    margin: 10px;
+}
+
+.section a{
+    color: #000;
+}
+
+.footer{
+    text-align: center;
+    background-color: #000;
+    padding: 20px;
+    
+}
+
+.footer a{
+    text-decoration: none;
+    color: #fff;  
+}
+
+.footer a:hover{
+    text-decoration: none;
+
+}
