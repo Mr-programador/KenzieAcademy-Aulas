@@ -1,109 +1,175 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Open+Sans:wght@400;700&family=Roboto+Condensed:ital,wght@0,700;1,700&display=swap');
 
 body {
-    font-family: 'Open-sans', sans-serif;
-    font-size: 20px; 
-    background-color: #000;
-    width: 100vw;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-  }
+  font-family: 'Open-sans', sans-serif;
+  font-size: 20px;
+  background-color: #000;
+  width: 100vw;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
 
-  .header-escondido{
-    display: none;
-    margin: auto;
-  }
+.header-escondido {
+  display: none;
+  margin: auto;
+}
 
-  .header {
-    margin-bottom: 50px;
-    width: 1000px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+.header {
+  margin-bottom: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-  .header img{
-    display: flex;
-    justify-content: center;
+.header img {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 20px;
+}
+
+.header h2 {
+  font-weight: 700;
+  font-size: 2.0rem;
+}
+
+.bloco {
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bloco ul {
+  width: 100%;
+  max-width: 1000px;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.bloco li,
+a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 10%;
+  margin: 10px;
+  padding: 10px;
+}
+
+.bloco img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  border: 3px solid #000;
+  border-radius: 10%;
+}
+
+.bloco img:hover {
+  border: 3px solid #fff;
+  transition: 0.4s;
+  scale: 1.1;
+}
+
+.bloco img:active {
+  color: #606060;
+  border: 3px solid #606060;
+  transition: 0.4s;
+}
+
+.button {
+  margin-top: 20px;
+  background-color: #202020;
+  color: #fff;
+  border: 3px solid #000;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.button:hover {
+  border: 3px solid #fff;
+  transition: 0.4s;
+}
+
+.button:active {
+  color: #606060;
+  border: 3px solid #606060;
+  transition: 0.4s;
+}
+
+@media (max-width: 768px) {
+  .header img {
+    width: 50%;
+  }
+  
+  .bloco ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .bloco li {
+    text-align: center;
+    width: 40%;
+    min-width: 200px;
+    max-width: 300px;
+  }
+  
+  .bloco img {
+    width: 80%;
+    min-width: 150px;
+    max-width: 250px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header img {
+    width: 40%;
+  }
+  
+  .bloco li {
     width: 30%;
-    margin: auto;
-    padding: 20px;
+    min-width: 200px;
+    max-width: 250px;
   }
+  
+  .bloco img {
+    width: 80%;
+    min-width: 150px;
+    max-width: 200px;
+  }
+}
 
-  .header h2{
-    font-weight: 700;
-    font-size: 2.0rem;
+@media (min-width: 1024px) {
+  .header img {
+    width: 30%;
   }
-
-  .bloco{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+  
+  .bloco li {
+    width: 20%;
+    min-width: 200px;
+    max-width: 250px;
   }
-
-  .bloco ul{
-    width: 1000px;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  
+  .bloco img {
+    width: 80%;
+    min-width: 150px;
+    max-width: 180px;
   }
-
-  .bloco li, a {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: #fff;
-    border-radius: 10%;
-  }
-
-  .bloco img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    border: 3px solid #000;
-    border-radius: 10%;
-    margin-bottom: 20px;
-  }
-
-  .bloco img:hover{
-    border: 3px solid #fff;
-    transition: 0.4s;
-    scale: 1.1;
-  }
-
-  .bloco img:active{
-    color: #606060;
-    border: 3px solid #606060;
-    transition: 0.4s;
-  }
-
-  .button{
-    margin-top: 100px;
-    background-color: #202020;
-    color: #fff;
-    padding: 10px 20px;
-    border: 3px solid #000;
-    border-radius: 10px;
-    font-size: 16px;
-  }
-
-  .button:hover{
-    border: 3px solid #fff;
-    transition: 0.4s;
-  }
-
-  .button:active{
-    color: #606060;
-    border: 3px solid #606060;
-    transition: 0.4s;
-  }
+}
