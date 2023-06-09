@@ -5,57 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mrprogramador-Kenzie</title>
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/estilo.css">
 </head>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Título da Página</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
 <body>
-
-    <header class="titulo">
-        <h1>Maicon Rodrigues
-            <span class="link"><a href="https://github.com/Mr-programador">Mrprogramador</span>
-            </a></h1>
+    <header class="header">
+      <h1>Maicon Rodrigues
+        <span class="link"><a href="https://github.com/Mr-programador">Mrprogramador</a></span>
+      </h1>
     </header>
-
-    <main class="principal">
-        <h2>Bem-vindo, essas são minhas atividades</h2>
-    </main>
-
-    <section class="projetos">
-        <h3>Meus Projetos e atividades:</h2>
-        
-        <div class="bloco">
-            <ul>
-                <h3>Atividades</h3>
-                <li><a href="./atividade-marcando-textos.html">Marcando Textos</a></li>
-                <li><a href="./atividade-formulario.html">Formulário</a></li>
-                <li><a href="./atividade-cores.html">Seletores e Cores</a></li>
-                <li><a href="./atividade-trabalhando-textos.html">Trabalhando com Textos</a></li>
-                <li><a href="./atividade-boxModel.html">Box-Model e Espaçamentos</a></li>
-                <li><a href="./atividade-unidade-de-medidas.html">Unidades de Medida</a></li>
-                <li><a href="./atividade-flexbox.html">Flex-Box</a></li>
-            </ul>
-        </div>
-
-        <div class="bloco">
-            <ul>
-                <h3>Tarefas</h3>
-                <li><a href="./tarefa-post-blog.html">Post (Blog da Kenzie)</a></li>
-                <li><a href="./tarefa2-formulario-blog.html">Formulário (Blog da Kenzie)</a></li>
-                <li><a href="./tarefa-base-kenzieflix.html">Base arquivo de estilo (Kenzieflix)</a></li>
-                <li><a href="./tarefa2-ajustando-kenzieflix.html">Ajustando tamanhos e posicionamento (Kenzieflix)</a></li>
-            </ul>
-        </div>
-
-        <div class="bloco">
-            <ul>
-                <h3>Entregas Concluídas</h3>
-                <li><a href="./index-blog.html">Blog da Kenzie</a></li>
-                <li><a href="./index-kenzieflix.html">Kenzieflix</a></li>
-            </ul>
-        </div>
-    </section>
-
-    <footer class="rodape">
-        <p>Mrprogramador & Kenzie Academy</p>
-    </footer>
+  
+    <div class="container">
+      <div class="tabs">
+        <div class="tab active" onclick="openTab('atividades')">Atividades</div>
+        <div class="tab" onclick="openTab('tarefas')">Tarefas</div>
+        <div class="tab" onclick="openTab('entregas')">Entregas</div>
+      </div>
+  
+      <div class="tab-content active" id="atividades">
+        <ul>
+          <li><a href="./atividade-marcando-textos.html">Marcando Textos</a></li>
+          <li><a href="./atividade-formulario.html">Formulário</a></li>
+          <li><a href="./atividade-cores.html">Seletores e Cores</a></li>
+          <li><a href="./atividade-trabalhando-textos.html">Trabalhando com Textos</a></li>
+          <li><a href="./atividade-boxModel.html">Box-Model e Espaçamentos</a></li>
+          <li><a href="./atividade-unidade-de-medidas.html">Unidades de Medida</a></li>
+          <li><a href="./atividade-flexbox.html">Flex-Box</a></li>
+        </ul>
+      </div>
+  
+      <div class="tab-content" id="tarefas">
+        <ul>
+          <li><a href="./tarefa-post-blog.html">Post (Blog da Kenzie)</a></li>
+          <li><a href="./tarefa2-formulario-blog.html">Formulário (Blog da Kenzie)</a></li>
+          <li><a href="./tarefa-base-kenzieflix.html">Base arquivo de estilo (Kenzieflix)</a></li>
+          <li><a href="./tarefa2-ajustando-kenzieflix.html">Ajustando posicionamento (Kenzieflix)</a></li>
+        </ul>
+      </div>
+  
+      <div class="tab-content" id="entregas">
+        <ul>
+          <li><a href="./index-blog.html">Blog da Kenzie</a></li>
+          <li><a href="./index-kenzieflix.html">Kenzieflix</a></li>
+        </ul>
+      </div>
+    </div>
+  
+    <div class="rodape">
+      <footer>
+        <p><a href="#">&copy;Kenzie Academy</a></p>
+      </footer>
+    </div>
+  <script src="./js/script.js"></script>
 </body>
 </html>
