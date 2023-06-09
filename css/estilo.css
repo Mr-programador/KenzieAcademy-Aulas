@@ -12,8 +12,6 @@ body {
   font-size: 18px;
   font-family: 'Open Sans', sans-serif;
   background-color: var(--contraste);
-  padding: 0;
-  margin: 0;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -53,6 +51,16 @@ body {
   color: var(--destaque);
 }
 
+.mensagem {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.0em;
+}
+
+.mensagem h2{
+  font-size: 1.4em;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -62,7 +70,6 @@ body {
   background-color: #fff;
   box-sizing: border-box;
   padding: 2rem;
-  margin-top: 1rem; /* Adicionado espaçamento entre o header e a navegação */
 }
 
 .tabs {
