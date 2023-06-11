@@ -1,6 +1,7 @@
 /* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
+    background-color: #ffffff;
   }
   
   .container {
@@ -15,6 +16,7 @@ body {
     align-items: center;
     justify-content: space-between;
     height: 50px;
+    box-shadow: 1px 1px 10px #606060;
   }
   
   .header h1 {
