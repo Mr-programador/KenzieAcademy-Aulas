@@ -1,16 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Open+Sans:wght@400;700&family=Roboto+Condensed:ital,wght@0,700;1,700&display=swap');
 
 body {
-  font-family: 'Open-sans', sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 20px;
   background-color: #000;
   width: 100vw;
-  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: auto;
 }
 
 .header-escondido {
@@ -53,64 +51,71 @@ body {
   height: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content:space-around;
   align-items: center;
-  padding: 0;
-  margin: 0;
 }
 
-.bloco li,
-a {
+.bloco li{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-decoration: none;
-  color: #fff;
   border-radius: 10%;
-  margin: 10px;
-  padding: 10px;
 }
 
 .bloco img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
+  width: 150px;
   border: 3px solid #000;
   border-radius: 10%;
+  margin-bottom: 10px;
 }
 
-.bloco img:hover {
+.bloco p{
+  color: #808080;
+  font-size: 1.2rem;
+}
+
+.bloco li:hover p {
+  color: #fff;
+}
+
+.bloco li:active p {
+  color: #808080;
+}
+
+.bloco img:hover{
   border: 3px solid #fff;
-  transition: 0.4s;
-  scale: 1.1;
 }
 
 .bloco img:active {
-  color: #606060;
-  border: 3px solid #606060;
+  color: #808080;
+  border: 3px solid #808080;
   transition: 0.4s;
 }
 
 .button {
-  margin-top: 20px;
-  background-color: #202020;
-  color: #fff;
+  margin-top: 100px;
+  background-color: #808080;
   border: 3px solid #000;
   border-radius: 10px;
   font-size: 16px;
+  padding: 10px;
+}
+
+.button a{
+  text-decoration: none;
+  color: #fff;
 }
 
 .button:hover {
-  border: 3px solid #fff;
-  transition: 0.4s;
+  background-color: #fff;
 }
 
-.button:active {
-  color: #606060;
-  border: 3px solid #606060;
-  transition: 0.4s;
+.button a:hover {
+  color: black;
 }
 
 @media (max-width: 768px) {
