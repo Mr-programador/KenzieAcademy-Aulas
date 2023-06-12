@@ -1,80 +1,101 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blogflex</title>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/estilo-flexblog.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/estilo-flexblog.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <title>Blog com Flexbox</title>
 </head>
-
 <body>
-    <header class="header">
-        <h1>See News</h1>
-    </header>
+  <nav>
+    <h2>See News</h2>
+  </nav>
 
-    <main class="main">
-        <div class="container">
-            <img src="#">
-            <h2>Titulo da noticia</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque ipsa eius consectetur quod minima nesciunt optio asperiores reiciendis fugit quia impedit voluptatem dolor possimus, labore nulla? Deserunt distinctio quod quaerat.</p>
-
-            <div class="link">
-                <a>Entretenimento</a>
-            </div>
-
-            <div class="link">
-                <a>Curiosidades</a>
-            </div>
+  <main>
+    <section class="left-section">
+      <article>
+        <img src="./img/codigo.png" alt="">
+        <h4>Como utilizar o CSS da melhor forma em 2021</h4>
+        <p>Aprenda a utilizar as melhores técnicas de CSS e criar interfaces consistentes</p>
+        <div class="tags-div">
+          <span>Entretenimento</span>
+          <span>Curiosidades</span>
         </div>
-    </main>
+      </article>
 
-    <aside class="aside">
-        <section class="recents-posts">
-            <img src="#" alt="descrição-1">
-            <p>breve descrição</p>
-            
-            <img src="#" alt="descrição-2">
-            <p>breve descrição</p>
+      <article>
+        <img src="./img/codigo.png" alt="">
+        <h4>Como utilizar o CSS da melhor forma em 2022</h4>
+        <p>Crie estruturas HTML que forneçam uma capacidade semântica de qualidade para os....</p>
+        <div class="tags-div">
+          <span>Dicas</span>
+        </div>
+      </article>
 
-            <img src="#" alt="descrição-3">
-            <p>breve descrição</p>
-        </section>
+      <article>
+        <img src="./img/codigo.png" alt="">
+        <h4>Trabalho em equipe - como melhorar a comunicação</h4>
+        <p>Comunicação clara e objetiva é uma skill muito necessária no mercado de trabalho, então va...</p>
+        <div class="tags-div">
+          <span>Dicas</span>
+        </div>
+      </article>
 
-        <section class="popular-posts">
-            <img src="#" alt="descrição-1">
-            <p>breve descrição</p>
-            
-            <img src="#" alt="descrição-2">
-            <p>breve descrição</p>
+      <article>
+        <img src="./img/codigo.png" alt="">
+        <h4>O que o CSS moderno pode oferecer para aprimorar a acessibilidade</h4>
+        <p>Nesse post vamos aprender conceitos modernos de CSS para aprimorar a acessibili...</p>
+        <div class="tags-div">
+          <span>Novidades</span>
+        </div>
+      </article>
+    </section>
 
-            <img src="#" alt="descrição-3">
-            <p>breve descrição</p>
-        </section>
+    <section class="right-section">
+      <div class="div-recent-posts">
+        <h4>Recent Posts</h4>
+        <div class="post">
+          <img src="./img/codigo.png" alt="">
+          <h5>Como manter a consistência nos estudos</h5>
+        </div>
+        <div class="post">
+          <img src="./img/codigo.png" alt="">
+          <h5>Home Office - será esse o futuro de todas as empresas?</h5>
+        </div>
+        <div class="post">
+          <img src="./img/codigo.png" alt="">
+          <h5>Como manter o ambiente de estudos organizado e agra...</h5>
+        </div>
+      </div>
 
-    </aside>
+      <div class="div-popular-posts">
+        <h4>Popular Posts</h4>
+        <div class="post">
+          <img src="./img/codigo.png" alt="">
+          <h5>Bancos de imagens gratuitos para utilizar em seus projet...</h5>
+        </div>
+        <div class="post">
+          <img src="./img/codigo.png" alt="">
+          <h5>O que considerar na hora de comprar um pc novo</h5>
+        </div>
+        <div class="post">
+          <img src="./img/codigo.png" alt="">
+          <h5>Qual a diferença entre UI Design e Front End</h5>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <footer class="footer">
-        <h3>See News</h3>
-            <div class="redes">
-                <ul>
-                    <li>
-                        <a><img src="#" alt="rede-1"></a>
-                    </li>
-                    <li>
-                        <a><img src="#" alt="rede-2"></a>
-                    </li>
-                    <li>
-                        <a><img src="#" alt="rede-3"></a>
-                    </li>
-                </ul>
-            </div>
-    </footer>
-
-    <button class="pagina">
-        <a href="./index.html">Página Inicial</a>
-    </button>
+  <footer>
+    <h2>See News</h2>
+    <div>
+      <span><i class="material-icons">facebook</i></span>
+      <span><i class="material-icons">instagram</i></span>
+      <span><i class="material-icons">message</i></span>
+    </div>
+  </footer>
 </body>
 </html>
