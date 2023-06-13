@@ -1,0 +1,17 @@
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: #fff;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
