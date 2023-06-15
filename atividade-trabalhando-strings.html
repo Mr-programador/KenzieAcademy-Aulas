@@ -9,47 +9,75 @@
 </head>
 <body>
     <header class="header">
-        <h1>Trabalhando com Strings/h1>
+        <h1>Trabalhando com Strings</h1>
     </header>
 
     <main>
         <section>
             <h2>Trabalhando com Strings (Javascript)</h2>
             <div class="quadro">
-                <pre><code>
-                    //Exercicio 1
-                    let nome1 ="João";
-                    let nome2 = "Silva";
+                <div class="codigo">
+                    <h2>Exercício 1</h2>
+                    <p>Crie um programa que concatene dois nomes e retorne uma frase de saudação.
+                    Entrada: nome1 = "João", nome2 = "Silva" Saída: "Olá João Silva!"</p>
+                    <pre><code>
+                        let nome1 ="João";
+                        let nome2 = "Silva";
 
-                    console.log(`Olá, ${nome1} ${nome2}!`);
+                        console.log(`Olá, ${nome1} ${nome2}!`);
+                    </code></pre>
+                </div>
 
-                    //Exercicio 2
-                    let string1 = "hello";
-                    let string2 = "world";
+                <div class="codigo">
+                    <h2>Exercício 2</h2> 
+                    <p>Crie um programa que adicione uma string ao final de outra string e retorne a string resultante.
+                    Entrada: string1 = "hello", string2 = "world" Saída: "helloworld"</p> 
+                    <pre><code>
+                        let string1 = "hello";
+                        let string2 = "world";
 
-                    console.log (`${string1}${string2}`);
+                        console.log (`${string1}${string2}`);
+                    </code></pre>
+                </div>
 
-                    //Exercicio 3 - Duas formas de fazer
+                <div class="codigo">
+                    <h2>Exercício 3</h2> 
+                    <p>Crie um programa que receba uma string em formato de número decimal e retorne o número inteiro equivalente.
+                    Entrada: "12.5" Saída: 12</p> 
+                    <pre><code>
+                        //Duas formas de fazer
 
-                    //parseInt: A função parseInt converte um valor para um número inteiro, ignorando qualquer parte decimal.
-                    let decimalF = 12.5;
-                    console.log(parseInt(parseFloat(decimal)));
+                        //parseInt: A função parseInt converte um valor para um número inteiro, ignorando qualquer parte decimal.
+                        let decimalF = 12.5;
+                        console.log(parseInt(parseFloat(decimal)));
 
-                    //Math.floor: A função Math.floor arredonda um número para baixo.
-                    let decimal = 12.5;
-                    console.log(Math.floor(decimal));
+                        //Math.floor: A função Math.floor arredonda um número para baixo.
+                        let decimal = 12.5;
+                        console.log(Math.floor(decimal));
+                    </code></pre>
+                </div>
 
-                    //Exercicio 4
-                    let conversorNum = "12";
-                    console.log(parseInt(conversorNum));
+                <div class="codigo">
+                    <h2>Exercício 4</h2> 
+                    <p>Crie um programa que converta uma string em formato de número inteiro para um número inteiro.
+                    Entrada: "12" Saída: 12</p>
+                    <pre><code>
+                        let conversorNum = "12";
+                        console.log(parseInt(conversorNum));
+                    </code></pre>
+                </div>
 
-                    //Exercicio 5
-                    let num1 = "12";
-                    let num2 = "3";
-                    let soma = parseInt(num1) + parseInt(num2);
-
-                    console.log(soma);
-                </code></pre>
+                <div class="codigo">
+                    <h2>Exercício 5</h2> 
+                    <p>Crie um programa que converta duas strings em formato de número inteiro para um número inteiro, faça uma soma desses números e apresente o resultado
+                    Entrada 1: "12" Entrada 2: "3" Saída: 15</p> 
+                    <pre><code>
+                        let num1 = "12";
+                        let num2 = "3";
+                        let soma = parseInt(num1) + parseInt(num2);
+                        console.log(soma);
+                    </code></pre>
+                </div>
             </div>
          </section>
      </main>

@@ -1,4 +1,5 @@
 //Exercicio 1
+
 let nome1 ="João";
 let nome2 = "Silva";
 
