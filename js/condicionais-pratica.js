@@ -30,56 +30,45 @@ if (boo === true && boo2 === true){
 }
 
 //Exercicio 4
-let valor1 = parseInt(prompt("Digite o primeiro valor:"));
-let valor2 = parseInt(prompt("Digite o segundo valor:"));
-let valor3 = parseInt(prompt("Digite o terceiro valor:"));
+let valor1 = 10;
+let valor2 = 30;
+let valor3 = 40;
 
-// Verificar se os valores são diferentes
-if (valor1 !== valor2 && valor1 !== valor3 && valor2 !== valor3) {
-    // Ordenar os valores em ordem decrescente
-    let maior, meio, menor;
-  
-    if (valor1 > valor2 && valor1 > valor3) {
-      maior = valor1;
-      if (valor2 > valor3) {
-        meio = valor2;
-        menor = valor3;
-      } else {
-        meio = valor3;
-        menor = valor2;
-      }
-    } else if (valor2 > valor3) {
-      maior = valor2;
-      if (valor1 > valor3) {
-        meio = valor1;
-        menor = valor3;
-      } else {
-        meio = valor3;
-        menor = valor1;
-      }
-    } else {
-      maior = valor3;
-      meio = valor2;
-      menor = valor1;
-    }
-  
-    // Exibir os valores em ordem decrescente
-    console.log("Os valores em ordem decrescente são:");
-    console.log(maior);
-    console.log(meio);
-    console.log(menor);
-  } else {
-    console.log("Os valores informados não são diferentes.");
-  }
+//Cobrindo o valor inteiros e diferentes e mostrando em ordem
 
-  //Exercicio 5
-let numero1 = parseFloat(prompt("Digite o primeiro número:"));
-let numero2 = parseFloat(prompt("Digite o segundo número:"));
+//abc
+if(a > b && b > c){
+    console.log(`${c} < ${b} < ${a}`);
+}
+//bac
+else if(c > a && a > b){
+    console.log(`${b} < ${a} < ${c}`);
+}
+//cab
+else if(b > a && a > c){
+    console.log(`${c} < ${a} < ${b}`);
+}
+//acb
+else if(b > c && c > a){
+    console.log(`${a} < ${c} < ${b}`);
+}
+//bca
+else if(a > c && c > b){
+    console.log(`${b} < ${c} < ${a}`);
+}
+//cba
+else if(a > b && b > c){
+    console.log(`${c} < ${b} < ${a}`);
+}
+
+//Exercicio 5
+let numero1 = 10;
+let numero2 = 20;
 
 if (numero1 > numero2) {
-alert(`O primeiro número (${numero1}) é maior que o segundo número (${numero2}).`);
+    console.log(`O primeiro número (${numero1}) é maior que o segundo número (${numero2}).`);
 } else if (numero2 > numero1) {
-alert(`O segundo número (${numero2}) é maior que o primeiro número (${numero1}).`);
+    console.log(`O segundo número (${numero2}) é maior que o primeiro número (${numero1}).`);
 } else {
-alert("Os números são iguais.");
+    console.log("Os números são iguais.");
 }
