@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/estilo-javascript.css">
+    <title>Condicionais na Prática</title>
+</head>
+<body>
+    <header class="header">
+        <h1>Condicionais na Prática</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Atividade: Condicionais na Prática (Javascript)</h2>
+            <div class="quadro">
+                <div class="codigo">
+                    <h2>Exercício 1</h2>
+                    <p>Faça um algoritmo que leia os valores A, B, C e imprima na tela se a soma de A + B é menor que C.</p>
+                    <pre><code>
+                        let a = 5;
+                        let b = 10;
+                        let c = 13;
+
+                        let soma = a + b;
+
+                        if (soma < c) {
+                        console.log(`${a} + ${b} é menor que ${c}`);
+                        } else {
+                        console.log(`${a} + ${b} não é menor que ${c}`);
+                        }
+                        
+                    </code></pre>
+                </div>
+
+                <div class="codigo">
+                    <h2>Exercício 2</h2>
+                    <p>Faça um algoritmo para receber um número qualquer e informar na tela se é par ou ímpar.</p>
+                    <pre><code>
+                        let numero = 10;
+                        if (numero % 2 === 0) {
+                            console.log("O número é par.");
+                        } else {
+                            console.log("O número é ímpar.");
+                        }
+                    </code></pre>
+                </div>
+
+                <div class="codigo">
+                    <h2>Exercício 3</h2>
+                    <p>Escreva um algoritmo que lê dois valores booleanos (lógicos) e então determina se ambos são VERDADEIROS ou FALSOS.</p>
+                    <pre><code>
+                        let boo = true;
+                        let boo2 = true;
+
+                        if (boo === true && boo2 === true){
+                            console.log ("Ambos os valores são verdadeiros")
+                        }else{
+                            console.log ("Tem um valor falso");
+                        }
+                    </code></pre>
+                </div>
+
+                <div class="codigo">
+                    <h2>Exercício 4</h2>
+                    <p>Escreva um algoritmo que leia três valores inteiros e diferentes e mostre-os em ordem
+                        decrescente.</p>
+                    <pre><code>
+                        let valor1 = parseInt(prompt("Digite o primeiro valor:"));
+                        let valor2 = parseInt(prompt("Digite o segundo valor:"));
+                        let valor3 = parseInt(prompt("Digite o terceiro valor:"));
+
+                        // Verificar se os valores são diferentes
+                        if (valor1 !== valor2 && valor1 !== valor3 && valor2 !== valor3) {
+                            // Ordenar os valores em ordem decrescente
+                            let maior, meio, menor;
+                        
+                            if (valor1 > valor2 && valor1 > valor3) {
+                            maior = valor1;
+                            if (valor2 > valor3) {
+                                meio = valor2;
+                                menor = valor3;
+                            } else {
+                                meio = valor3;
+                                menor = valor2;
+                            }
+                            } else if (valor2 > valor3) {
+                            maior = valor2;
+                            if (valor1 > valor3) {
+                                meio = valor1;
+                                menor = valor3;
+                            } else {
+                                meio = valor3;
+                                menor = valor1;
+                            }
+                            } else {
+                            maior = valor3;
+                            meio = valor2;
+                            menor = valor1;
+                            }
+                        
+                            // Exibir os valores em ordem decrescente
+                            console.log("Os valores em ordem decrescente são:");
+                            console.log(maior);
+                            console.log(meio);
+                            console.log(menor);
+                        } else {
+                            console.log("Os valores informados não são diferentes.");
+                        }
+                    </code></pre>
+                </div>
+
+                <div class="codigo">
+                    <h2>Exercício 5</h2>
+                    <p>Escreva um algoritmo que receba dois números. ⁠Alerte em tela qual o maior valor recebido.</p>
+
+                    <p>Dica: Para alertar você pode utilizar a função alert(), ou se preferir, mostre no console através da função console.log()</p>
+                    <pre><code>
+                        let numero1 = parseFloat(prompt("Digite o primeiro número:"));
+                        let numero2 = parseFloat(prompt("Digite o segundo número:"));
+
+                        if (numero1 > numero2) {
+                        alert(`O primeiro número (${numero1}) é maior que o segundo número (${numero2}).`);
+                        } else if (numero2 > numero1) {
+                        alert(`O segundo número (${numero2}) é maior que o primeiro número (${numero1}).`);
+                        } else {
+                        alert("Os números são iguais.");
+                        }
+                    </code></pre>
+            </div>
+         </section>
+     </main>
+ 
+     <button class="button">
+         <a href="./index.html">Página Inicial</a>
+     </button>
+     <script src="./js/condicionais-pratica.js"></script>
+</body>
+</html>
