@@ -11,7 +11,6 @@ function tumb (numero) {
 
 console.log(tumb(1));
 
-
 //Exercício 2
 //Desenvolva uma função que informe a quantidade de dígitos de um determinado número inteiro informado por parâmetro.
 
@@ -27,7 +26,6 @@ function contarDigitos(numero) {
 
   console.log(contarDigitos(230))
 
-
 //Exercício 3
 //Desenvolva uma função que some dois números passados por parâmetro. A soma só deve acontecer se o primeiro número passado por parâmetro for maior que o segundo. Caso contrário você deverá retornar a seguinte frase: "O primeiro número não é maior que o segundo."
 
@@ -40,7 +38,6 @@ function soma(num1, num2){
 }
 
 console.log(soma(3,2));
-
 
 //Exercício 4
 //Desenvolva uma função com 2 parâmetros. O primeiro deve se chamar palavra, e o segundo deve se chamar letra. Se a palavra passada no primeiro parâmetro começar com a letra passada como segundo parâmetro, retorne true. Se a palavra passada no primeiro parâmetro não começar com a letra passada no segundo parâmetro, retorne false.
