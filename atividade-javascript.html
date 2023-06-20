@@ -68,16 +68,16 @@
             <h2>Praticando Operadores (Javascript)</h2>
             <div class="quadro">
 
-            <h3>Exercício 1: Some as duas variáveis e imprima</h3>
-            <pre><code>
+                <h3>Exercício 1: Some as duas variáveis e imprima</h3>
+                <pre><code>
                 let num1 = 5;
                 let num2 = 10;
 
                 console.log (num1 + num2);
             </code></pre>
 
-            <h3>Calcule o comprimento da circunferência e imprima</h3>
-            <pre><code>
+                <h3>Calcule o comprimento da circunferência e imprima</h3>
+                <pre><code>
                 //Exercício 2: 
                 let pi = 3.14;
                 let raio = 5;
@@ -85,16 +85,16 @@
                 console.log (raio * pi);
             </pre></code>
 
-            <h3>Exercício 3: Converta a temperatura de Celsius para Fahrenheit e imprima</h3>
-            <pre><code>
+                <h3>Exercício 3: Converta a temperatura de Celsius para Fahrenheit e imprima</h3>
+                <pre><code>
                 let temperaturaCelsius = 30;
                 let conversorFahrenheit = ((temperaturaCelsius * 9)/5) + 32;
 
                 console.log(conversorFahrenheit);
             </code></pre>
 
-            <h3>Exercício 4: Calcule a média das duas notas e imprima</h3>
-            <pre><code>
+                <h3>Exercício 4: Calcule a média das duas notas e imprima</h3>
+                <pre><code>
                 let nota1 = 7;
                 let nota2 = 9;
                 let media = (nota1 + nota2)/2;
@@ -111,16 +111,16 @@
                 console.log (`A área é de ${area}m`);
             </code></pre>
 
-            <h3>Exercício 6: Calcule o salário líquido e imprima</h3>
-            <pre><code>
+                <h3>Exercício 6: Calcule o salário líquido e imprima</h3>
+                <pre><code>
                 let salarioBruto = 5000;
                 let salarioLiquido = salarioBruto - (salarioBruto * 0.1);
 
                 console.log (`O salário líquido é de ${salarioLiquido}R$`);
             </code></pre>
 
-            <h3>Exercício 7: Calcule o salário bruto e imprima</h3>
-            <code><pre>
+                <h3>Exercício 7: Calcule o salário bruto e imprima</h3>
+                <code><pre>
                 let horasTrabalhadas = 40;
                 let valorHora = 50;
                 let salarioTotal = horasTrabalhadas * valorHora;
@@ -133,16 +133,19 @@
         <section>
             <h2>Funções sem Parâmetro (Javascript)</h2>
             <div class="quadro">
-            <h3>Exercício 1: Desenvolva uma função que mostre no console a frase "Hello World!".</h3>
-            <pre><code>
+
+                <h3>Exercício 1: Desenvolva uma função que mostre no console a frase "Hello World!".</h3>
+                <pre><code>
                 function frase(){
                     console.log("Hello World!");
                 }
                 
                 frase()
             </code></pre>
-            <h3>Exercício 2: Desenvolva uma função para saber se o(a) aluno(a) possui métricas para virar monitor(a).</h3>
-            <pre><code>
+
+                <h3>Exercício 2: Desenvolva uma função para saber se o(a) aluno(a) possui métricas para virar
+                    monitor(a).</h3>
+                <pre><code>
                 /*Requisitos:
                 100 de Entregas
                 100 de Entrevistas Técnicas
@@ -165,8 +168,9 @@
                     verificarMonitor();
             </code></pre>
 
-            <h3>ício 3: Desenvolva uma função que recebe três variáveis com valores numéricos e identifica qual deles é o maior.</h3>
-            </code></pre>
+                <h3>Exercício 3: Desenvolva uma função que recebe três variáveis com valores numéricos e identifica qual
+                    deles é o maior.</h3>
+                <code><pre>
                 function MaiorNum (){
                 let num1 = 6;
                 let num2 = 6;
@@ -184,8 +188,10 @@
                             }else{ console.log("Os números são iguais"); } }
                 MaiorNum() 
             </code></pre>
-            <h3>Exercício 4: Desenvolva uma função para mostrar no console a seguinte frase: "Meu nome é -nome e sobrenome-, e tenho -idade- anos".</h3>
-            <pre><code>
+
+                <h3>Exercício 4: Desenvolva uma função para mostrar no console a seguinte frase: "Meu nome é -nome e
+                    sobrenome-, e tenho -idade- anos".</h3>
+                <pre><code>
                 Declare as seguintes variáveis dentro da função:
                 nome
                 sobrenome
@@ -208,8 +214,9 @@
             <h2>Funções sem Parâmetro (Javascript)</h2>
             <div class="quadro">
 
-            <h3>Exercício 1: Desenvolva uma função com apenas um parâmetro. A função deve retornar o valor de caractere P se o parâmetro for positivo, e N se o parâmetro for zero ou negativo.</h3>
-            <pre><code>
+                <h3>Exercício 1: Desenvolva uma função com apenas um parâmetro. A função deve retornar o valor de
+                    caractere P se o parâmetro for positivo, e N se o parâmetro for zero ou negativo.</h3>
+                <pre><code>
                 function tumb (numero) {
                     if (numero > 0) {
                     return 'P';
@@ -221,8 +228,9 @@
                 console.log(tumb(1));
             </code></pre>
 
-            <h3>Exercício 2: Desenvolva uma função que informe a quantidade de dígitos de um determinado número inteiro informado por parâmetro.</h3>
-            <pre><code>
+                <h3>Exercício 2: Desenvolva uma função que informe a quantidade de dígitos de um determinado número
+                    inteiro informado por parâmetro.</h3>
+                <pre><code>
                 function contarDigitos(numero) {
                     if (numero === 0) {
                     return 1; // Se o número for zero, possui apenas um dígito
@@ -236,8 +244,10 @@
                 console.log(contarDigitos(230))
             </code></pre>
 
-            <h3>Exercício 3 Desenvolva uma função que some dois números passados por parâmetro. A soma só deve acontecer se o primeiro número passado por parâmetro for maior que o segundo. Caso contrário você deverá retornar a seguinte frase: "O primeiro número não é maior que o segundo."</h3>
-            <pre><code>
+                <h3>Exercício 3 Desenvolva uma função que some dois números passados por parâmetro. A soma só deve
+                    acontecer se o primeiro número passado por parâmetro for maior que o segundo. Caso contrário você
+                    deverá retornar a seguinte frase: "O primeiro número não é maior que o segundo."</h3>
+                <pre><code>
                 function soma(num1, num2){
                     if(num1 > num2){
                     return num1 + num2;
@@ -249,8 +259,11 @@
                 console.log(soma(3,2));
             </code></pre>
 
-            <h3>Exercício 4: Desenvolva uma função com 2 parâmetros. O primeiro deve se chamar palavra, e o segundo deve se chamar letra. Se a palavra passada no primeiro parâmetro começar com a letra passada como segundo parâmetro, retorne true. Se a palavra passada no primeiro parâmetro não começar com a letra passada no segundo parâmetro, retorne false.</h3>
-            <pre><code>
+                <h3>Exercício 4: Desenvolva uma função com 2 parâmetros. O primeiro deve se chamar palavra, e o segundo
+                    deve se chamar letra. Se a palavra passada no primeiro parâmetro começar com a letra passada como
+                    segundo parâmetro, retorne true. Se a palavra passada no primeiro parâmetro não começar com a letra
+                    passada no segundo parâmetro, retorne false.</h3>
+                <pre><code>
                 function checkLetra(palavra, letra) {
                     return palavra.charAt(0).toLowerCase() === letra.toLowerCase();
                 }
@@ -258,8 +271,11 @@
                 console.log(checkLetra("Maicon", "M"));  // Saída: true
             </code></pre>
 
-            <h3>Exercício 5: Desenvolva uma função com o parâmetro horaAtendimento para saber se o horário corresponde com o funcionamento do /pergunta. Se o horário de inicio for maior ou igual a 11 e menor ou igual a 23, retorne "O /pergunta está em horário de funcionamento." Caso contrário retorne "O /pergunta não está em horário de funcionamento."</h3>
-            <pre><code>
+                <h3>Exercício 5: Desenvolva uma função com o parâmetro horaAtendimento para saber se o horário
+                    corresponde com o funcionamento do /pergunta. Se o horário de inicio for maior ou igual a 11 e menor
+                    ou igual a 23, retorne "O /pergunta está em horário de funcionamento." Caso contrário retorne "O
+                    /pergunta não está em horário de funcionamento."</h3>
+                <pre><code>
                 function programacao(horaAtendimento){
                     if (horaAtendimento >= 11 && horaAtendimento <= 23){
                         return "O /pergunta está em horário de funcionamento."
