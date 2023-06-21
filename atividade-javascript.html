@@ -16,276 +16,413 @@
 
     <main>
         <section>
-            <h2>Trabalhando com Variaveis (Javascript)</h2>
+            <h2>Trabalhando com Variáveis (Javascript)</h2>
             <div class="quadro">
-
-                <h3>Exercicio 1: Decimal, Iinteiro, String.</h3>
-                <pre><code>
-                let decimal = 1.70;
-                console.log("Decimal:", decimal);
-
-                let inteiro = 28;
-                console.log("Inteiro:", inteiro);
-
-                let string = "Maicon Rodrigues";
-                console.log("String:", string);
-            </code></pre>
-
-                <h3>Exercicio 2: Utilizar typeof para verificar o tipo da variável</h3>
-                <pre><code>
-                let num = 30;
-                console.log (typeof num);
-
-                //Exercicio 3: Utilizar typeof para verificar o tipo da variável.
-                let boo = true;
-                console.log (typeof boo);
-
-                //Exercicio 4: Utilizar typeof para verificar o tipo da variável.
-                let nome = "Maicon";
-                console.log (typeof nome);
-
-                //Exercicio 5: Exibir dois booleans.
-                let verdade = true;
-                let mentira = false;
-
-                console.log(typeof verdade);
-                console.log(typeof mentira);
-            </code></pre>
-
-                <h3>Exercicio 6: Exibir valor null.</h3>
-                <pre><code>
-                let nulo = null;
-                console.log(String(nulo));
-
-                //Exercicio 7: Exibir valor undefined.
-                let indefinido = undefined;
-                console.log(typeof indefinido);
-            </code></pre>
+                <h3>Exercício 1: Decimal, Inteiro, String.</h3>
+                <div class="code">
+                    <pre><code>
+    let decimal = 1.70;
+    console.log("Decimal:", decimal);
+    
+    let inteiro = 28;
+    console.log("Inteiro:", inteiro);
+    
+    let string = "Maicon Rodrigues";
+    console.log("String:", string);
+                    </code></pre>
+                </div>
             </div>
         </section>
 
         <section>
             <h2>Praticando Operadores (Javascript)</h2>
             <div class="quadro">
-
                 <h3>Exercício 1: Some as duas variáveis e imprima</h3>
-                <pre><code>
-                let num1 = 5;
-                let num2 = 10;
+                <div class="code">
+                    <pre><code>
+    let num1 = 5;
+    let num2 = 10;
+    
+    console.log(num1 + num2);
+                    </code></pre>
+                </div>
 
-                console.log (num1 + num2);
-            </code></pre>
-
-                <h3>Calcule o comprimento da circunferência e imprima</h3>
-                <pre><code>
-                //Exercício 2: 
-                let pi = 3.14;
-                let raio = 5;
-
-                console.log (raio * pi);
-            </pre></code>
+                <h3>Exercício 2: Calcule o comprimento da circunferência e imprima</h3>
+                <div class="code">
+                    <pre><code>
+    // Exercício 2:
+    let pi = 3.14;
+    let raio = 5;
+    
+    console.log(raio * pi);
+                    </code></pre>
+                </div>
 
                 <h3>Exercício 3: Converta a temperatura de Celsius para Fahrenheit e imprima</h3>
-                <pre><code>
-                let temperaturaCelsius = 30;
-                let conversorFahrenheit = ((temperaturaCelsius * 9)/5) + 32;
-
-                console.log(conversorFahrenheit);
-            </code></pre>
+                <div class="code">
+                    <pre><code>
+    let temperaturaCelsius = 30;
+    let conversorFahrenheit = (temperaturaCelsius * 9) / 5 + 32;
+    
+    console.log(conversorFahrenheit);
+                    </code></pre>
+                </div>
 
                 <h3>Exercício 4: Calcule a média das duas notas e imprima</h3>
-                <pre><code>
-                let nota1 = 7;
-                let nota2 = 9;
-                let media = (nota1 + nota2)/2;
-
-                console.log (`A média foi ${media}`);
-            </code></pre>
+                <div class="code">
+                    <pre><code>
+    let nota1 = 7;
+    let nota2 = 9;
+    let media = (nota1 + nota2) / 2;
+    
+    console.log(`A média foi ${media}`);
+                    </code></pre>
+                </div>
 
                 <h3>Exercício 5: Calcule a área do retângulo e imprima</h3>
-                <code><pre>
-                let largura = 10;
-                let comprimento = 20;
-                let area = largura * comprimento;
-
-                console.log (`A área é de ${area}m`);
-            </code></pre>
+                <div class="code">
+                    <pre><code>
+    let largura = 10;
+    let comprimento = 20;
+    let area = largura * comprimento;
+    
+    console.log(`A área é de ${area}m`);
+                    </code></pre>
+                </div>
 
                 <h3>Exercício 6: Calcule o salário líquido e imprima</h3>
-                <pre><code>
-                let salarioBruto = 5000;
-                let salarioLiquido = salarioBruto - (salarioBruto * 0.1);
-
-                console.log (`O salário líquido é de ${salarioLiquido}R$`);
-            </code></pre>
+                <div class="code">
+                    <pre><code>
+    let salarioBruto = 5000;
+    let salarioLiquido = salarioBruto - (salarioBruto * 0.1);
+    
+    console.log(`O salário líquido é de ${salarioLiquido}R$`);
+                    </code></pre>
+                </div>
 
                 <h3>Exercício 7: Calcule o salário bruto e imprima</h3>
-                <code><pre>
-                let horasTrabalhadas = 40;
-                let valorHora = 50;
-                let salarioTotal = horasTrabalhadas * valorHora;
-
-                console.log (`O salário bruto é de ${salarioTotal}R$`);
-            </code></pre>
+                <div class="code">
+                    <pre><code>
+    let horasTrabalhadas = 40;
+    let valorHora = 50;
+    let salarioTotal = horasTrabalhadas * valorHora;
+    
+    console.log(`O salário bruto é de ${salarioTotal}R$`);
+                    </code></pre>
+                </div>
             </div>
         </section>
 
         <section>
             <h2>Funções sem Parâmetro (Javascript)</h2>
             <div class="quadro">
-
                 <h3>Exercício 1: Desenvolva uma função que mostre no console a frase "Hello World!".</h3>
-                <pre><code>
-                function frase(){
-                    console.log("Hello World!");
-                }
-                
-                frase()
-            </code></pre>
+                <div class="code">
+                    <pre><code>
+        function frase(){
+            console.log("Hello World!");
+        }
+        
+        frase()
+                    </code></pre>
+                </div>
 
                 <h3>Exercício 2: Desenvolva uma função para saber se o(a) aluno(a) possui métricas para virar
                     monitor(a).</h3>
-                <pre><code>
-                /*Requisitos:
-                100 de Entregas
-                100 de Entrevistas Técnicas
-                100 de Presença
-                Se os requisitos forem atingidos, mostre no console "Possível monitor(a)." Se os requisitos não forem atingidos, mostre no console "Selecionar outro(a) aluno(a)."
-                */
-
-                function verificarMonitor() {
-                    var entregas = 100;
-                    var entrevistasTecnicas = 100;
-                    var presenca = 100;
-                    
-                    if (entregas >= 100 && entrevistasTecnicas >= 100 && presenca >= 100) {
-                        console.log("Possível monitor(a).");
-                    } else {
-                        console.log("Selecionar outro(a) aluno(a).");
-                    }
-                    }
-                    
-                    verificarMonitor();
-            </code></pre>
+                <div class="code">
+                    <pre><code>
+        /*Requisitos:
+        100 de Entregas
+        100 de Entrevistas Técnicas
+        100 de Presença
+        Se os requisitos forem atingidos, mostre no console "Possível monitor(a)." Se os requisitos não forem atingidos, mostre no console "Selecionar outro(a) aluno(a)."
+        */
+        
+        function verificarMonitor() {
+            var entregas = 100;
+            var entrevistasTecnicas = 100;
+            var presenca = 100;
+            
+            if (entregas >= 100 && entrevistasTecnicas >= 100 && presenca >= 100) {
+                console.log("Possível monitor(a).");
+            } else {
+                console.log("Selecionar outro(a) aluno(a).");
+            }
+        }
+        
+        verificarMonitor();
+                    </code></pre>
+                </div>
 
                 <h3>Exercício 3: Desenvolva uma função que recebe três variáveis com valores numéricos e identifica qual
                     deles é o maior.</h3>
-                <code><pre>
-                function MaiorNum (){
-                let num1 = 6;
-                let num2 = 6;
-                let num3 = 6;
-
-                if(num1 > num2 && num2 >= num3){
+                <div class="code">
+                    <pre><code>
+        function MaiorNum (){
+            let num1 = 6;
+            let num2 = 6;
+            let num3 = 6;
+        
+            if(num1 > num2 && num2 >= num3){
                 console.log(`O número ${num1} é o maior número`);
-                }else if(num1 > num2 && num2 <= num3){ console.log(`O número ${num1} é o maior número`); }else if (num2>
-                    num3 && num3 <= num1){ console.log(`O número ${num2} é o maior número`); }else if (num2> num3 &&
-                        num3 >= num1){
-                        console.log(`O número ${num2} é o maior número`);
-                        }else if((num3 > num1 && num1 >= num2)){
-                        console.log(`O número ${num3} é o maior número`);
-                        }else if((num3 > num1 && num1 <= num2)){ console.log(`O número ${num3} é o maior número`);
-                            }else{ console.log("Os números são iguais"); } }
-                MaiorNum() 
-            </code></pre>
+            }else if(num1 > num2 && num2 <= num3){
+                console.log(`O número ${num1} é o maior número`);
+            }else if (num2 > num3 && num3 <= num1){
+                console.log(`O número ${num2} é o maior número`);
+            }else if (num2 > num3 && num3 >= num1){
+                console.log(`O número ${num2} é o maior número`);
+            }else if((num3 > num1 && num1 >= num2)){
+                console.log(`O número ${num3} é o maior número`);
+            }else if((num3 > num1 && num1 <= num2)){
+                console.log(`O número ${num3} é o maior número`);
+            }else{
+                console.log("Os números são iguais");
+            }
+        }
+        
+        MaiorNum() 
+                    </code></pre>
+                </div>
 
                 <h3>Exercício 4: Desenvolva uma função para mostrar no console a seguinte frase: "Meu nome é -nome e
                     sobrenome-, e tenho -idade- anos".</h3>
-                <pre><code>
-                Declare as seguintes variáveis dentro da função:
-                nome
-                sobrenome
-                idade
-       
-                function dados(){
-                    let nome = "Maicon";
-                    let sobrenome = "Rodrigues";
-                    let idade = 28;
-                
-                    console.log(`Meu nome é ${nome} ${sobrenome} e tenho ${28} anos`);
-                }
-                    dados()
-
-            </code></pre>
+                <div class="code">
+                    <pre><code>
+        Declare as seguintes variáveis dentro da função:
+        nome
+        sobrenome
+        idade
+        
+        function dados(){
+            let nome = "Maicon";
+            let sobrenome = "Rodrigues";
+            let idade = 28;
+        
+            console.log(`Meu nome é ${nome} ${sobrenome} e tenho ${28} anos`);
+        }
+        
+        dados()
+                    </code></pre>
+                </div>
             </div>
         </section>
 
         <section>
             <h2>Funções sem Parâmetro (Javascript)</h2>
             <div class="quadro">
-
                 <h3>Exercício 1: Desenvolva uma função com apenas um parâmetro. A função deve retornar o valor de
                     caractere P se o parâmetro for positivo, e N se o parâmetro for zero ou negativo.</h3>
-                <pre><code>
-                function tumb (numero) {
-                    if (numero > 0) {
-                    return 'P';
-                    } else {
-                    return 'N';
-                    }
-                }
-
-                console.log(tumb(1));
-            </code></pre>
+                <div class="code">
+                    <pre><code>
+        function tumb(numero) {
+            if (numero > 0) {
+                return 'P';
+            } else {
+                return 'N';
+            }
+        }
+        
+        console.log(tumb(1));
+                    </code></pre>
+                </div>
 
                 <h3>Exercício 2: Desenvolva uma função que informe a quantidade de dígitos de um determinado número
                     inteiro informado por parâmetro.</h3>
-                <pre><code>
-                function contarDigitos(numero) {
-                    if (numero === 0) {
-                    return 1; // Se o número for zero, possui apenas um dígito
-                    }
-                
-                    let numAbsoluto = Math.abs(numero); // Consideramos apenas o valor absoluto do número
-                    let numString = String(numAbsoluto); // Convertemos o número para uma string
-                    return numString.length; // Retornamos o comprimento da string (quantidade de dígitos)
-                }
+                <div class="code">
+                    <pre><code>
+        function contarDigitos(numero) {
+            if (numero === 0) {
+                return 1; // Se o número for zero, possui apenas um dígito
+            }
+        
+            let numAbsoluto = Math.abs(numero); // Consideramos apenas o valor absoluto do número
+            let numString = String(numAbsoluto); // Convertemos o número para uma string
+            return numString.length; // Retornamos o comprimento da string (quantidade de dígitos)
+        }
+        
+        console.log(contarDigitos(230));
+                    </code></pre>
+                </div>
 
-                console.log(contarDigitos(230))
-            </code></pre>
-
-                <h3>Exercício 3 Desenvolva uma função que some dois números passados por parâmetro. A soma só deve
-                    acontecer se o primeiro número passado por parâmetro for maior que o segundo. Caso contrário você
+                <h3>Exercício 3: Desenvolva uma função que some dois números passados por parâmetro. A soma só deve
+                    acontecer se o primeiro número passado por parâmetro for maior que o segundo. Caso contrário, você
                     deverá retornar a seguinte frase: "O primeiro número não é maior que o segundo."</h3>
-                <pre><code>
-                function soma(num1, num2){
-                    if(num1 > num2){
-                    return num1 + num2;
-                    }else{
-                        "O primeiro número não é maior que o segundo."
-                    }
-                }
-
-                console.log(soma(3,2));
-            </code></pre>
+                <div class="code">
+                    <pre><code>
+        function soma(num1, num2) {
+            if (num1 > num2) {
+                return num1 + num2;
+            } else {
+                return "O primeiro número não é maior que o segundo.";
+            }
+        }
+        
+        console.log(soma(3, 2));
+                    </code></pre>
+                </div>
 
                 <h3>Exercício 4: Desenvolva uma função com 2 parâmetros. O primeiro deve se chamar palavra, e o segundo
                     deve se chamar letra. Se a palavra passada no primeiro parâmetro começar com a letra passada como
                     segundo parâmetro, retorne true. Se a palavra passada no primeiro parâmetro não começar com a letra
                     passada no segundo parâmetro, retorne false.</h3>
-                <pre><code>
-                function checkLetra(palavra, letra) {
-                    return palavra.charAt(0).toLowerCase() === letra.toLowerCase();
-                }
-                
-                console.log(checkLetra("Maicon", "M"));  // Saída: true
-            </code></pre>
+                <div class="code">
+                    <pre><code>
+        function checkLetra(palavra, letra) {
+            return palavra.charAt(0).toLowerCase() === letra.toLowerCase();
+        }
+        
+        console.log(checkLetra("Maicon", "M"));  // Saída: true
+                    </code></pre>
+                </div>
 
                 <h3>Exercício 5: Desenvolva uma função com o parâmetro horaAtendimento para saber se o horário
                     corresponde com o funcionamento do /pergunta. Se o horário de inicio for maior ou igual a 11 e menor
-                    ou igual a 23, retorne "O /pergunta está em horário de funcionamento." Caso contrário retorne "O
+                    ou igual a 23, retorne "O /pergunta está em horário de funcionamento." Caso contrário, retorne "O
                     /pergunta não está em horário de funcionamento."</h3>
-                <pre><code>
-                function programacao(horaAtendimento){
-                    if (horaAtendimento >= 11 && horaAtendimento <= 23){
-                        return "O /pergunta está em horário de funcionamento."
-                    }else{
-                        return "O /pergunta não está em horário de funcionamento."
-                    }
-                }
+                <div class="code">
+                    <pre><code>
+        function programacao(horaAtendimento) {
+            if (horaAtendimento >= 11 && horaAtendimento <= 23) {
+                return "O /pergunta está em horário de funcionamento.";
+            } else {
+                return "O /pergunta não está em horário de funcionamento.";
+            }
+        }
+        
+        console.log(programacao(10));
+                    </code></pre>
+                </div>
+            </div>
+        </section>
 
-                console.log(programacao(10))
+        <section>
+            <h2>Reutilizando Funções</h2>
+            <div class="quadro">
+
+                <h3>Exercício 1: É necessário realizar a soma com uma função e depois reutilizar esta função para fazer
+                    outra operação matemática.</h3>
+                <pre><code>
+            function somaReutilizavel (a, b){
+                return a + b;
+            }
+
+            let resultado = 0;
+
+            console.log(somaReutilizavel(10, 10));
             </code></pre>
+
+                <h3>Exercício 2: É necessário obter o nome completo de um usuário e depois selecionar apenas as letras
+                    iniciais do nome e sobrenome</h3>
+                <pre><code>
+                function letraInicial (nome, sobrenome){
+                    let firstLNome = nome.charAt(0).toUpperCase();
+                    let firstLSobrenome = sobrenome.charAt(0).toUpperCase();
+                
+                    return `A primeira letra do nome é: ${firstLNome} e a primeira letra do sobrenome é: ${firstLSobrenome}`
+                }
+                
+                console.log(letraInicial('Maicon', 'Rodrigues'))
+                </code></pre>
+
+                <h3>Exercício 3: o objetivo deste exercício é desenvolver três funções para obter um resultado final. É
+                    necessário obter o número de letras de um produto e verificar se o total de caracteres é par ou
+                    ímpar.</h3>
+                <div class="code">
+                    <pre><code>
+                    function par(n) {
+                    return n % 2 === 0;
+                    }
+                    
+                    function impar(n) {
+                    return n % 2 === 1;
+                    }
+                
+                    function letrasProduto(produto) {
+                    let numeroDeCaracteres = produto.length;
+                    
+                    if (par(numeroDeCaracteres)) {
+                        return "O número de letras deste produto é par";
+                    } else if (impar(numeroDeCaracteres)) {
+                        return "O número de letras deste produto é ímpar";
+                    } else {
+                        return "Produto inválido";
+                    }
+                    }
+                
+                    console.log(par(4)); // Resultado: "O número de letras é Par"
+                    console.log(impar(15));// Resultado: "O número de letras é Ímpar"
+                
+                    console.log(letrasProduto("camarão"));  // Resultado: "O número de letras deste produto é ímpar"
+                    console.log(letrasProduto("banana"));   // Resultado: "O número de letras deste produto é par"
+                    </code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Reutilizando Funções</h2>
+            <div class="quadro">
+                <h3>Exercício 1: É necessário realizar a soma com uma função e depois reutilizar esta função para fazer
+                    outra operação matemática.</h3>
+                <div class="code">
+                    <pre><code>
+        function somaReutilizavel(a, b) {
+            return a + b;
+        }
+        
+        let resultado = 0;
+        
+        console.log(somaReutilizavel(10, 10));
+                    </code></pre>
+                </div>
+
+                <h3>Exercício 2: É necessário obter o nome completo de um usuário e depois selecionar apenas as letras
+                    iniciais do nome e sobrenome.</h3>
+                <div class="code">
+                    <pre><code>
+        function letraInicial(nome, sobrenome) {
+            let firstLNome = nome.charAt(0).toUpperCase();
+            let firstLSobrenome = sobrenome.charAt(0).toUpperCase();
+            
+            return `A primeira letra do nome é: ${firstLNome} e a primeira letra do sobrenome é: ${firstLSobrenome}`;
+        }
+        
+        console.log(letraInicial('Maicon', 'Rodrigues'));
+                    </code></pre>
+                </div>
+
+                <h3>Exercício 3: O objetivo deste exercício é desenvolver três funções para obter um resultado final. É
+                    necessário obter o número de letras de um produto e verificar se o total de caracteres é par ou
+                    ímpar.</h3>
+                <div class="code">
+                    <pre><code>
+        function par(n) {
+            return n % 2 === 0;
+        }
+        
+        function impar(n) {
+            return n % 2 === 1;
+        }
+        
+        function letrasProduto(produto) {
+            let numeroDeCaracteres = produto.length;
+        
+            if (par(numeroDeCaracteres)) {
+                return "O número de letras deste produto é par";
+            } else if (impar(numeroDeCaracteres)) {
+                return "O número de letras deste produto é ímpar";
+            } else {
+                return "Produto inválido";
+            }
+        }
+        
+        console.log(par(4)); // Resultado: "O número de letras é Par"
+        console.log(impar(15)); // Resultado: "O número de letras é Ímpar"
+        
+        console.log(letrasProduto("camarão")); // Resultado: "O número de letras deste produto é ímpar"
+        console.log(letrasProduto("banana")); // Resultado: "O número de letras deste produto é par"
+                    </code></pre>
+                </div>
             </div>
         </section>
     </main>
