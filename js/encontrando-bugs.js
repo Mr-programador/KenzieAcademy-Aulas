@@ -43,7 +43,6 @@ function algarismosEmUmNumero(n) {
 /*
 Exercício 4
 A função diaDaSemana deve receber por parâmetro um valor em formato de número ou texto, e retornar em texto o dia da semana que ele representa, seguindo a lista abaixo:
-
 Domingo
 Segunda-feira
 Terça-feira
@@ -51,7 +50,6 @@ Quarta-feira
 Quinta-feira
 Sexta-feira
 Sábado
-
 Caso o número recebido por parâmetro for inválido, você deve retornar o texto: 'Valor Inválido'.
 */
 function diaDaSemana(n) {
