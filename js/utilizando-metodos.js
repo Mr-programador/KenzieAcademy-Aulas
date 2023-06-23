@@ -19,7 +19,7 @@ A função deve retornar a média arredondada em uma mensagem no seguinte format
 function mediaAluno(nota1, nota2, nota3){
     let mediaNotas = (nota1 + nota2 + nota3)/3;
     let notaInteira = mediaNotas.toFixed(); 
-    return notaInteira;
+    return `A média do aluno é ${notaInteira}`;
 }
 
 console.log(mediaAluno(8.5,7,6));
@@ -50,3 +50,4 @@ function desconto(valorUnitario, quantidade){
 
 //Chamada dos parametros
 console.log(desconto(20, 10))
+

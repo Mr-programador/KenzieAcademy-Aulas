@@ -425,6 +425,231 @@
                 </div>
             </div>
         </section>
+
+
+
+        <section>
+            <h2>Encontrando Bugs</h2>
+            <div class="quadro">
+                <h3>Exercício 1: Você foi contratado por uma empresa de software para corrigir alguns bugs. A empresa
+                    possui diversos produtos e precisa da sua ajuda para analisar e corrigir algumas funções.
+                    A função calculaIMC deve receber dois parâmetros, o peso em quilogramas e a altura em metros. É
+                    necessário retornar o índice de massa corporal do usuário.</h3>
+                <div class="code">
+                    <pre><code>
+                        function calculaIMC(peso, altura) {
+                          let alturaAoQuadrado = altura ** 2;
+                          let imc = peso / alturaAoQuadrado;
+                          let resultado = imc
+                          return resultado
+                        }
+                        
+                        console.log(calculaIMC(80, 1.80)) 
+
+                        //Ao receber 80 para o peso e 1.80 para altura, a função deve retornar 
+                        //24.691358024691358
+                        
+                        /*Melhor forma de fazer a função.
+                        function calculaIMC(peso, altura) {
+                          return peso / (altura * altura);
+                        }
+                        console.log(calculaIMC(80, 1.80));
+                        */
+                    </code></pre>
+                </div>
+
+                <h3>Exercício 2: O objetivo é calcular a idade futura de uma pessoa tendo como base o ano de nascimento
+                    e o ano futuro.</h3>
+                <div class="code">
+                    <pre><code>
+                        function calculaIdade(nome, anoFuturo, anoNascimento) {
+                            let pessoa = nome;
+                            let idade = anoNascimento - anoFuturo;
+                            return `Em ${anoNascimento} ${pessoa} terá ${idade} anos de idade`;
+                        }
+                        console.log(calculaIdade('Pedro', 2002, 2030));
+
+                        //Ao receber os parâmetros: ("Pedro", 2002, 2030) a função deve retornar 
+                        //"Em 2030 Pedro terá 28 anos de idade".
+
+                        /*Melhor forma de fazer a função.
+                        function calculaIdade(nome, anoFuturo, anoNascimento) {
+                        let idade = anoNascimento - anoFuturo;
+                        return `Em ${anoNascimento} ${nome} terá ${idade} anos de idade`;
+                        }
+                        console.log(calculaIdade('Maicon', 1995, 2030)); 
+                    </code></pre>
+                </div>
+
+                <h3>Exercício 3: Receber como parâmetro um número inteiro ou com parte decimal e deve retornar a
+                    quantidade de algarismos que compõem esse numero.</h3>
+                <div class="code">
+                    <pre><code>
+                    function algarismosEmUmNumero(n) {
+                    let str = `${n}`;
+                    let contagem = str.length;
+
+                    if (n != parseInt(n)) {
+                        contagem = contagem - 1;
+                    }
+
+                    return contagem;
+                    }
+
+                    console.log(algarismosEmUmNumero(3.14159265))
+
+                    //Ao receber 3.14159265 a função deve retornar 9.
+
+                    /*Melhor forma de fazer a função.
+                    function algarismosEmUmNumero(n) {
+                    let str = `${n}`;
+                    // Remover o ponto decimal da string antes de calcular o comprimento
+                    let contagem = str.replace('.', '').length;
+                    return contagem;
+                    }
+                    console.log(algarismosEmUmNumero(3.14159265));
+                    */
+                    </code></pre>
+                </div>
+
+                <h3>Exercício 4: A função diaDaSemana deve receber por parâmetro um valor em formato de número ou texto,
+                    e retornar em texto o dia da semana que ele representa, seguindo a lista abaixo:
+                </h3>
+                <div class="code">
+                    <pre><code>
+                    /*
+                    Domingo
+                    Segunda-feira
+                    Terça-feira
+                    Quarta-feira
+                    Quinta-feira
+                    Sexta-feira
+                    Sábado
+                    */
+                    //Caso o número recebido por parâmetro for inválido, você deve retornar o texto: 
+                    //'Valor Inválido'.
+
+                    function diaDaSemana(n) {
+                        let resultado = "";
+                      
+                        if (n === 1 || n === '1') {
+                          resultado = 'Domingo';
+                        } else if(n === 2 || n === '2') {
+                          resultado = 'Segunda-feira';
+                        } else if(n === 3 || n === '3') {
+                          resultado = 'Terça-feira';
+                        } else if(n === 4 || n === '4') {
+                          resultado = 'Quarta-feira';
+                        } else if(n === 5 || n === '5') {
+                          resultado = 'Quinta-feira';
+                        } else if(n === 6 || n === '6') {
+                          resultado = 'Sexta-feira'; 
+                        } else if(n === 7 || n === '7') {
+                          resultado = 'Sábado';
+                        } else{
+                          resultado = 'Valor Inválido';
+                        }
+                      
+                        return resultado;
+                      }
+                      
+                      console.log(diaDaSemana("1")); // Ao receber '1' a função deve retornar 'Domingo'
+                      console.log(diaDaSemana(3)); // Ao receber 3 a função deve retornar 'Terça-feira'
+                      console.log(diaDaSemana(0)); // Ao receber 0 a função deve retornar 'Valor Inválido'
+                      
+                      /*Melhor forma de fazer a função.
+                      function diaDaSemana(n) {
+                        // Objeto que mapeia os números de 1 a 7 aos respectivos nomes dos dias da semana
+                        const diasDaSemana = {
+                          1: 'Domingo',
+                          2: 'Segunda-feira',
+                          3: 'Terça-feira',
+                          4: 'Quarta-feira',
+                          5: 'Quinta-feira',
+                          6: 'Sexta-feira',
+                          7: 'Sábado'
+                        };
+                      
+                        const numero = parseInt(n); // Converter o valor de entrada para um número
+                      
+                        return diasDaSemana[numero] || 'Valor Inválido'; // Retorna o dia correspondente ou 'Valor Inválido' se não for encontrado
+                      }
+                      
+                      console.log(diaDaSemana("1")); // Ao receber '1' a função deve retornar 'Domingo'
+                      console.log(diaDaSemana(3)); // Ao receber 3 a função deve retornar 'Terça-feira'
+                      console.log(diaDaSemana(0)); // Ao receber 0 a função deve retornar 'Valor Inválido'
+                      */
+                    </code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Encontrando Bugs</h2>
+            <div class="quadro">
+                <h3>Exercício 1: Crie uma função que recebe três parâmetros: uma frase, uma palavra antiga e uma palavra nova. A função deve buscar por todas as ocorrências da palavra antiga na frase e substituí-las pela palavra nova.</h3>
+                <div class="code">
+                    <pre><code>    
+                    function trocaPalavra (frase, palavraAntiga, novaPalavra){
+                        let novaFrase = frase.replaceAll(palavraAntiga, novaPalavra);
+                        return novaFrase
+                    }
+
+                    console.log(trocaPalavra("Você pode fazer qualquer coisa se colocar sua vontade para isso", "vontade", "mente"));
+                    </code></pre>
+                </div>
+
+                <h3>Exercício 2: Escreva uma função em JavaScript que recebe três parâmetros numéricos: nota1, nota2 e nota3, que representam as notas de um aluno em três avaliações. A função deve calcular a média aritmética das notas e arredondar o resultado para uma casa decimal.
+                    A função deve retornar a média arredondada em uma mensagem no seguinte formato: "A média do aluno é ${notaInteira}."
+                    */
+                    </h3>
+                <div class="code">
+                    <pre><code>
+                    function mediaAluno(nota1, nota2, nota3){
+                        let mediaNotas = (nota1 + nota2 + nota3)/3;
+                        let notaInteira = mediaNotas.toFixed(); 
+                        return `A média do aluno é ${notaInteira}`;
+                    }
+                    
+                    console.log(mediaAluno(8.5,7,6));
+                    </code></pre>
+                </div>
+
+                <h3>Exercício 3: Escreva uma função em JavaScript que recebe dois parâmetros numéricos: valorUnitario e quantidade, que representam o valor unitário de um produto e a quantidade comprada, respectivamente. A função deve calcular o valor total da compra, aplicando um desconto progressivo no valor unitário e formatando o resultado com duas casas decimais.</h3>
+                <div class="code">
+                    <pre><code>
+                    /*
+                    O desconto será aplicado de acordo com a quantidade comprada:
+                    10% de desconto se a quantidade comprada for maior ou igual a 5;
+                    20% de desconto se a quantidade comprada for maior ou igual a 10.
+                    Em seguida, a função deve substituir o ponto por vírgula na string do valor total, e deve retornar uma mensagem no seguinte formato: "O valor total da compra é R$ <valorTotal>."
+                    */
+
+                    function desconto(valorUnitario, quantidade){
+                        //Declaração das variáveis
+                        let valorTotal = valorUnitario * quantidade;
+                        let desconto10 = valorTotal - (valorTotal * 0.1);
+                        let desconto20 = valorTotal - (valorTotal * 0.2);
+
+                        //Condição para os descontos
+                        if(quantidade > 0 && quantidade <= 4){
+                            return `Você comprou ${quantidade} peças e o valor total foi de: ${valorTotal.toFixed(2)} R$`;
+                        }else if(quantidade >= 5 && quantidade <=9){
+                            return `Você comprou ${quantidade} peças e o valor total foi de: ${desconto10.toFixed(2)} R$`;
+                        }else if(quantidade >= 10){
+                            return `Você comprou ${quantidade} peças e o valor total foi de: ${desconto20.toFixed(2)} R$`;
+                        }
+                        return "Valor Inválido"
+   
+                    }
+
+                    //Chamada dos parametros
+                    console.log(desconto(20, 10))
+
+                    </code></pre>
+                </div>
+            </div>
+        </section>
     </main>
 
     <button class="button">
