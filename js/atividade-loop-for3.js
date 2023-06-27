@@ -11,6 +11,26 @@ ANTERIOR -> Representa o valor anterior do contador.
 PRÓXIMO -> Representa o valor seguinte do contador.
 */
 
+function fibonacciNumbers() {
+    // Inicialização das variáveis
+    let atual = 0; // Valor atual na sequência de Fibonacci
+    let anterior = 1; // Valor anterior na sequência de Fibonacci
+    let fibonacci = 0; // Variável temporária para calcular o próximo número
+
+    console.log(atual); // Imprime o primeiro número da sequência (0)
+
+    // Loop para calcular e imprimir os próximos números da sequência
+    for (let i = 0; i <= 13; i++) { // Itera 14 vezes para obter os primeiros 14 números da sequência
+        fibonacci = anterior + atual; // Calcula o próximo número somando o valor anterior e o atual
+        console.log(fibonacci); // Imprime o próximo número da sequência
+
+        anterior = atual; // Atualiza o valor anterior para o valor atual
+        atual = fibonacci; // Atualiza o valor atual para o próximo número da sequência
+    }
+}
+
+fibonacciNumbers(); // Chama a função para iniciar o cálculo e impressão dos números
+
 /*
 Escrever um programa que calcule e apresente o somatório do número de grãos de trigo que se pode obter num tabuleiro de xadrez, obedecendo à seguinte regra: 
 Colocar um grão de trigo no primeiro quadro e nos quadros seguintes o dobro do quadro anterior.
@@ -18,3 +38,17 @@ Ou seja, no primeiro quadro coloca-se um grão, no segundo quadro colocam-se doi
 Resultado esperado: 18.446.744.073.709.552.000 grãos no tabuleiro.
 */
 
+function tabuleiro_de_graos() {
+    let anterior = 1;    // Variável para armazenar o número de grãos na casa anterior
+    let somatorio = 0;   // Variável para armazenar a soma cumulativa dos grãos
+    
+    for (let i = 1; i <= 64; i++) {   // Loop que percorre as casas de 1 a 64
+      somatorio = somatorio + anterior; // Adiciona a quantidade de grãos na casa anterior ao somatório
+    //somatorio += anterior;
+      anterior = anterior * 2;    // Dobra a quantidade de grãos para a próxima casa
+      
+      console.log(somatorio);    // Imprime o somatório de grãos em cada casa
+    }
+  }
+  
+  tabuleiro_de_graos();    // Chama a função para executar o código
