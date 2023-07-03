@@ -49,17 +49,19 @@ Saída: A soma é 660 e a média é 60.
 */
 
 function calcularSomaEMedia() {
+    //Dados de entrada
     let soma = 0;
     let quantidadePares = 0;
+    let media = 0;
   
     for (let i = 50; i <= 70; i += 2) {
       soma += i;
       quantidadePares++;
     }
   
-    let media = soma / quantidadePares;
+    media = soma / quantidadePares;
   
-    console.log("A soma é", soma, "e a média é", media.toFixed(2));
+    console.log(`A soma é, ${soma}, e a média é, ${media.toFixed(2)}`);
   }
   
   calcularSomaEMedia();
