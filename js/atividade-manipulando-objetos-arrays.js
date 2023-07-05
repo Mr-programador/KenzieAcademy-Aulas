@@ -167,5 +167,26 @@ function giveTheDepartmentABreak(departmentName) {
 // responsibility, uma variável do tipo (string)
 // salary, uma variável do tipo (number)
 */
-
-
+function insertNewEmployeeInDepartment(nameDepartment, newEmployee) {
+    for (let i = 0; i < departmentList.length; i++) {
+      // Verifica se o nome do departamento corresponde ao nome fornecido
+      if (departmentList[i].departmentName === nameDepartment) {
+        // Adiciona o novo funcionário ao array de funcionários do departamento
+        departmentList[i].employees.push(newEmployee);
+  
+        // Retorna o array atualizado de funcionários desse departamento
+        return departmentList[i].employees;
+      }
+    }
+    // Se nenhum departamento correspondente for encontrado, retorna a mensagem "Departamento não encontrado"
+    return "Departamento não encontrado.";
+  }
+  
+  // Exemplo de uso: adiciona um novo funcionário ao departamento "Financial"
+  console.log(insertNewEmployeeInDepartment("Financial", {
+      name: "Rosemary",
+      age: 44,
+      responsibility: "Financial expedition director",
+      salary: 15600,
+    })
+  );
